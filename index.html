@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link href="./assets/css/style.css" rel="stylesheet"/>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -27,19 +27,21 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <div id="clock"></div>
     </header>
     <div class="container mb-4">
-      <!-- Timeblocks go here -->
+      
+      <!-- Timeblocks go here. Timeblocks for standard business hours 9am-5pm. -->
       <form class="timeblock">
         <div class="form-row p-2 border-top justify-content-around">
           <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
-          <label for="8AM">8:00</label>
+          <label for="9AM">9AM</label>
         </div>
         <div class="col-9 col-md-9 col-lg-10">
-        <textarea class="form-control border-0 text-break text-light" id="08AM" rows="3"></textarea>
+        <textarea class="form-control border-0 text-break text-light" id="9AM" rows="3"></textarea>
         </div>
         <div class="col-1 d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="08AM"></button>
+          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="9AM"></button>
         </div>
         </div>
       </form>
@@ -47,21 +49,7 @@
       <form class="timeblock">
         <div class="form-row p-2 border-top justify-content-around">
           <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
-          <label for="9AM">9:00</label>
-        </div>
-        <div class="col-9 col-md-9 col-lg-10">
-        <textarea class="form-control border-0 text-break text-light" id="09AM" rows="3"></textarea>
-        </div>
-        <div class="col-1 d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="09AM"></button>
-        </div>
-       </div>
-      </form>
-         
-      <form class="timeblock">
-        <div class="form-row p-2 border-top justify-content-around">
-          <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
-          <label for="10AM">10:00</label>
+          <label for="10AM">10AM</label>
         </div>
         <div class="col-9 col-md-9 col-lg-10">
         <textarea class="form-control border-0 text-break text-light" id="10AM" rows="3"></textarea>
@@ -71,11 +59,11 @@
         </div>
        </div>
       </form>
-  
+         
       <form class="timeblock">
         <div class="form-row p-2 border-top justify-content-around">
           <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
-          <label for="11AM">11:00</label>
+          <label for="11AM">11AM</label>
         </div>
         <div class="col-9 col-md-9 col-lg-10">
         <textarea class="form-control border-0 text-break text-light" id="11AM" rows="3"></textarea>
@@ -89,7 +77,7 @@
       <form class="timeblock">
         <div class="form-row p-2 border-top justify-content-around">
           <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
-          <label for="12PM">12:00</label>
+          <label for="12PM">12PM</label>
         </div>
         <div class="col-9 col-md-9 col-lg-10">
         <textarea class="form-control border-0 text-break text-light" id="12PM" rows="3"></textarea>
@@ -98,18 +86,32 @@
           <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="12PM"></button>
         </div>
        </div>
+      </form>
+  
+      <form class="timeblock">
+        <div class="form-row p-2 border-top justify-content-around">
+          <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
+          <label for="1PM">1PM</label>
+        </div>
+        <div class="col-9 col-md-9 col-lg-10">
+        <textarea class="form-control border-0 text-break text-light" id="1PM" rows="3"></textarea>
+        </div>
+        <div class="col-1 d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="1PM"></button>
+        </div>
+       </div>
       </form> 
   
       <form class="timeblock">
         <div class="form-row p-2 border-top justify-content-around">
           <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
-          <label for="01PM">1:00</label>
+          <label for="2PM">2PM</label>
         </div>
         <div class="col-9 col-md-9 col-lg-10">
-        <textarea class="form-control border-0 text-break text-light" id="01PM" rows="3"></textarea>
+        <textarea class="form-control border-0 text-break text-light" id="2PM" rows="3"></textarea>
         </div>
         <div class="col-1 d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="01PM"></button>
+          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="2PM"></button>
         </div>
        </div>
       </form>
@@ -117,13 +119,13 @@
       <form class="timeblock">
         <div class="form-row p-2 border-top justify-content-around">
           <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
-          <label for="02PM">2:00</label>
+          <label for="3PM">3PM</label>
         </div>
         <div class="col-9 col-md-9 col-lg-10">
-        <textarea class="form-control border-0 text-break text-light" id="02PM" rows="3"></textarea>
+        <textarea class="form-control border-0 text-break text-light" id="3PM" rows="3"></textarea>
         </div>
         <div class="col-1 d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="02PM"></button>
+          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="3PM"></button>
         </div>
        </div>
       </form>
@@ -131,13 +133,13 @@
       <form class="timeblock">
         <div class="form-row p-2 border-top justify-content-around">
           <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
-          <label for="03PM">3:00</label>
+          <label for="4PM">4PM</label>
         </div>
         <div class="col-9 col-md-9 col-lg-10">
-        <textarea class="form-control border-0 text-break text-light" id="03PM" rows="3"></textarea>
+        <textarea class="form-control border-0 text-break text-light" id="4PM" rows="3"></textarea>
         </div>
         <div class="col-1 d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="03PM"></button>
+          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="4PM"></button>
         </div>
        </div>
       </form>
@@ -145,61 +147,20 @@
       <form class="timeblock">
         <div class="form-row p-2 border-top justify-content-around">
           <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
-          <label for="04PM">4:00</label>
+          <label for="5PM">5PM</label>
         </div>
         <div class="col-9 col-md-9 col-lg-10">
-        <textarea class="form-control border-0 text-break text-light" id="04PM" rows="3"></textarea>
+        <textarea class="form-control border-0 text-break text-light" id="5PM" rows="3"></textarea>
         </div>
         <div class="col-1 d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="04PM"></button>
-        </div>
-       </div>
-      </form>
-  
-      <form class="timeblock">
-        <div class="form-row p-2 border-top justify-content-around">
-          <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
-          <label for="05PM">5:00</label>
-        </div>
-        <div class="col-9 col-md-9 col-lg-10">
-        <textarea class="form-control border-0 text-break text-light" id="05PM" rows="3"></textarea>
-        </div>
-        <div class="col-1 d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="05PM"></button>
-        </div>
-       </div>
-      </form>
-  
-      <form class="timeblock">
-        <div class="form-row p-2 border-top justify-content-around">
-          <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
-          <label for="06PM">6:00</label>
-        </div>
-        <div class="col-9 col-md-9 col-lg-10">
-        <textarea class="form-control border-0 text-break text-light" id="06PM" rows="3"></textarea>
-        </div>
-        <div class="col-1 d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="06PM"></button>
-        </div>
-       </div>
-      </form>
-  
-      <form class="timeblock">
-        <div class="form-row p-2 border-top justify-content-around">
-          <div class="col-1 col-form-label d-flex align-items-center justify-content-center">
-          <label for="PM">7:00</label>
-        </div>
-        <div class="col-9 col-md-9 col-lg-10">
-        <textarea class="form-control border-0 text-break text-light" id="07PM" rows="3"></textarea>
-        </div>
-        <div class="col-1 d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="07PM"></button>
+          <button type="button" class="btn btn-outline-info btn-lg fas fa-save" data-time="5PM"></button>
         </div>
        </div>
       </form>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

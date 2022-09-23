@@ -4,6 +4,16 @@ body {
   line-height: 1;
 }
 
+/* Style for Time Counter */
+#clock {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 1px;
+}
+
 textarea {
   background: transparent;
   border: none;
